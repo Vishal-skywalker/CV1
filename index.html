@@ -28,7 +28,7 @@
                         As a tech enthusiast, I enjoy coding and keeping up with new technologies. In my free time, I love to unwind with TV shows and video games. I believe my creativity, problem-solving, and teamwork skills make me a great fit for any job in the tech industry.
                         </p>
                         <p>
-                        Age – 23 <br>
+                        Age – <span id="age"></span> <br>
                         DOB – 26th June 2000 <br>
                         Height – 166 cm
                     </p>
@@ -38,8 +38,8 @@
                         CONTACT
                     </p>
                     <p class="left-content">
-                        Mobile - 8583039601 <br>
-                        Email - <a href="mailto:das.vishal8583@gmail.com">das.vishal8583@gmail.com</a> 
+                        <a href="tel:+918583039601">+918583039601</a><br>
+                        <a href="mailto:das.vishal8583@gmail.com">das.vishal8583@gmail.com</a> 
                     </p>
                 </class>
                 <class class="Hobbies">
@@ -83,7 +83,7 @@
                         <p class="sub-heading">WORK EXPERIENCE</p>
                     </div>
                     <div class="work">
-                        <p>Currently working as Salesforece Administrator/Developer in Cloud Analogy Softech Ltd.(14 months).</p>
+                        <p>I am presently working as a Salesforce Administrator/Developer at Cloud Analogy Softech Ltd., where I have gained 14 months of valuable experience.</p>
                     </div>
                     <div class="hr">
                         <p class="sub-heading">SKILLS</p>
@@ -95,9 +95,7 @@
                         </p>
                         <p>
                             <strong>Softwares –</strong>
-                            Autocad 2D, MS Word, basic MS Excel, MS
-                            Powerpoint, Photoshop, Lightroom, Jira, Bitbucket, Corel Draw and many other
-                            editing softwares.
+                            Skilled in utilizing a diverse range of software applications, encompassing AutoCAD 2D, MS Word, basic MS Excel, MS PowerPoint, Photoshop, Lightroom, Jira, Bitbucket, Corel Draw, and numerous other editing software tools.
                         </p>
                         <p>
                             <strong>Progreamming Languages –</strong>
@@ -105,14 +103,21 @@
                         </p>
                         <p>
                             <strong>Salesforce –</strong>
-                            Apex, Flows, Porcess Builder, Wokflow, Triggers, Data management, User Security, Data
-                            Securty, Aura, LWC and working knowledge of React.js and Node.js.
+                            Proficient in Salesforce development technologies including Apex, Flows, Process Builder, Workflow, Triggers, Data Management, User Security, and Data Security. Possesses knowledge of Aura and LWC etc.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var dob = new Date("2000-06-26");
+        var now = new Date();
+        var ageDiff = now.getTime() - dob.getTime();
+        var ageDate = new Date(ageDiff);
+        var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+        document.getElementById("age").innerHTML = age;
+    </script>
 </body>
 
 </html>
